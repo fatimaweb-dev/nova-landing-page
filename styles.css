@@ -1,0 +1,237 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* Root Colors */
+:root {
+  --primary: #0a2540;
+  --secondary: #3b82f6;
+  --accent: #22c55e;
+  --text-dark: #ffffff;
+  --bg-light: #1f2933;
+}
+/* Body */
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+/* Section Spacing */
+section {
+  padding: 80px 40px;
+}
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: -0.5px;
+}
+
+h1,
+h2 {
+  margin-bottom: 40px;
+}
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 42px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #d1d5db;
+}
+/* Button Styling */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+a {
+  text-decoration: none;
+}
+.primary-btn {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-3px);
+}
+/* Problem Section */
+.problem {
+  background-color: var(--primary);
+  text-align: center;
+}
+.problem-list {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+.problem-list li {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #d1d5db;
+}
+/* Solution Section */
+.features {
+  text-align: center;
+  background-color: var(--bg-light);
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.feature-card {
+  background-color: var(--primary);
+  padding: 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.solution-card i {
+  font-size: 30px;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+/* Why-us Section */
+.why-us {
+  background-color: var(--primary);
+  text-align: center;
+}
+.why-us p {
+  color: #d1d5db;
+  max-width: 600px;
+  margin: auto;
+}
+/* Testimonials */
+.testimonials {
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: var(--primary);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.client-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.client-info p {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+/* Call to Action */
+.cta {
+  text-align: center;
+  background: linear-gradient(135deg, #0a2540, #1f3a5f);
+}
+/* Contact Form */
+.contact {
+  background-color: var(--primary);
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  background-color: var(--bg-light);
+  color: white;
+  border: 1px solid transparent;
+  transition: border 0.3s ease;
+  padding: 20px 30px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid var(--secondary);
+}
+textarea {
+  min-height: 140px;
+}
+/* Footer */
+.footer {
+  background-color: var(--bg-light);
+  text-align: center;
+  padding: 20px;
+  color: #d1d5db;
+  font-size: 14px;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
